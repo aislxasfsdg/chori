@@ -20,4 +20,4 @@ jobs:
     - name: Start Local To Net
       run: .\localtonet.exe authtoken $Env:LOCALTONET_AUTH_TOKEN
       env:
-        NGROK_AUTH_TOKEN: ${{ secrets.LOCALTONET_AUTH_TOKEN }}
+        LOCALTONET_AUTH_TOKEN: ${{ secrets.LOCALTONET_AUTH_TOKEN }}
